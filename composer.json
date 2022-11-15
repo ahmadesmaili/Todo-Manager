@@ -1,0 +1,16 @@
+{
+    "name": "ahmadesmaili/7todo",
+    "description": "A simple todo list Project (with ajax ,Php and Mysql)",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmad Esmaili",
+            "email": "ahmadesmaili71@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "hekmatinasser/verta": "^8.1"
+    }
+}
