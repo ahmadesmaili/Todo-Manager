@@ -2,29 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cd5393e-bc89-4819-b948-686318ee8c79" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/7todo.local.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/constants.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/init.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/lib-auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/lib-helpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/lib-tasks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tpl/tpl-auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tpl/tpl-index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/auth.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/bg-auth.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/lib-auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/libs/lib-auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/lib-helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/libs/lib-helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/lib-tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/libs/lib-tasks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/tpl-auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/tpl-auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpl/tpl-index.php" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/tpl-index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +23,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,20 +48,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/7todo.local",
+    "last_opened_file_path": "C:/xampp/htdocs/7todo.local/assets/img",
+    "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\7todo.local\assets\img" />
       <recent name="C:\xampp\htdocs\7todo.local" />
       <recent name="C:\xampp\htdocs\7todo.local\tpl" />
-      <recent name="C:\xampp\htdocs\7todo.local\assets\img" />
       <recent name="C:\xampp\htdocs\7todo.local\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -74,6 +73,11 @@
       <recent name="C:\xampp\htdocs\7todo.local\assets" />
       <recent name="C:\xampp\htdocs\7todo.local\assets\css" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

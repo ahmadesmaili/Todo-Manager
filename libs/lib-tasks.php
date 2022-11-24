@@ -2,7 +2,7 @@
 defined('BASE_PATH') or die("Permision Denied");
 
 #----- Folder Functions-------
-function deleteFolder($folder_id)
+function deleteFolder($folder_id): int
 {
     global $pdo;
     $sql = "delete from folders where id=$folder_id";
@@ -11,17 +11,18 @@ function deleteFolder($folder_id)
     return $stmt->rowCount();
 }
 
-function isFolder($folder_name)
+function isFolder($folder_name): int
 {
     global $pdo;
-    $sql = "SELECT COUNT(name) as cont FROM Folders WHERE name=:folder_name;";
+    $current_user_id = getCurrentUserId();
+    $sql = "SELECT COUNT(name) as cont FROM Folders WHERE name=:folder_name and user_id=:user_id ;";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([":folder_name" => $folder_name]);
+    $stmt->execute([":folder_name" => $folder_name, ":user_id" => $current_user_id]);
     $result = $stmt->fetch(PDO::FETCH_OBJ);
     return $result->cont;
 }
 
-function addFolder($folder_name)
+function addFolder($folder_name): object|array
 {
     global $pdo;
     $current_user_id = getCurrentUserId();
@@ -38,7 +39,7 @@ function addFolder($folder_name)
 }
 
 
-function getFolders()
+function getFolders(): object|array
 {
     global $pdo;
     $current_user_id = getCurrentUserId();
@@ -50,7 +51,7 @@ function getFolders()
 
 #----- Task Functions-------
 
-function deleteTask($task_id)
+function deleteTask($task_id): int
 {
     global $pdo;
     $sql = "delete from tasks where id=$task_id";
@@ -59,7 +60,7 @@ function deleteTask($task_id)
     return $stmt->rowCount();
 }
 
-function addTask($task_title, $folder_id)
+function addTask($task_title, $folder_id): int
 {
     global $pdo;
     $current_user_id = getCurrentUserId();
@@ -69,7 +70,7 @@ function addTask($task_title, $folder_id)
     return $stmt->rowCount();
 }
 
-function getTasks()
+function getTasks(): object|array
 {
     global $pdo;
     $folder_id = $_GET['folder_id'] ?? null;
@@ -86,12 +87,12 @@ function getTasks()
 
 #----- Done Switch-------
 
-function doneSwitch($task_id)
+function doneSwitch($task_id): int
 {
     global $pdo;
     $current_user_id = getCurrentUserId();
     $sql = "UPDATE tasks SET is_done = 1-is_done WHERE user_id=:userId and id = :task_id;";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([':task_id'=>$task_id, ':userId'=>$current_user_id]);
+    $stmt->execute([':task_id' => $task_id, ':userId' => $current_user_id]);
     return $stmt->rowCount();
 }

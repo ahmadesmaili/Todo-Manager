@@ -18,8 +18,11 @@
 <div class="page">
     <div class="pageHeader">
         <div class="title">Dashboard</div>
-        <div class="userPanel"><i class="fa fa-chevron-down"></i><span class="username">Ahmad Esmaili</span><img
-                    src="https://s.gravatar.com/avatar/6038b7331c0297c5ae169d69cf218407?s=80" width="40" height="40"/>
+        <div class="userPanel">
+            <a href="<?= siteUrl('?logout=1')?>" style="color: #fff;"><i class="fa fa-sign-out"></i></a>
+            <span class="username"><?php echo $user->name ?? 'Unknown';?></span>
+            <img
+                    src="<?php echo $user->image;?>" width="40" height="40"/>
         </div>
     </div>
     <div class="main">
@@ -33,7 +36,7 @@
                 <div class="title">Folders</div>
                 <ul class="folder-list">
                     <li class="<?php echo (!isset($_GET['folder_id'])) ? 'active' : ''; ?>">
-                        <a href="/"><i class="fa fa-folder"></i>All</a>
+                        <a href="<?php echo siteUrl(); ?>"><i class="fa fa-folder"></i>All</a>
                     </li>
                     <?php foreach ($folders as $folder): ?>
                         <li class="<?php echo (isset($_GET['folder_id']) && $_GET['folder_id'] === $folder->id) ? 'active' : ''; ?>">
@@ -59,10 +62,6 @@
                 <div class="title" style="width: 50%;">
                     <input type="text" id="addTaskInput" name="newTaskInput" style="width: 100%; line-height: 30px"
                            placeholder="Add New Task"/>
-                </div>
-                <div class="functions">
-                    <div class="button active">Add New Task</div>
-                    <div class="button">Completed</div>
                 </div>
             </div>
             <div class="content">

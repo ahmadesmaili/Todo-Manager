@@ -1,7 +1,7 @@
 /*@import url(https://fonts.googleapis.com/css?family=Dosis:300|Lato:300,400,600,700|Roboto+Condensed:300,700|Open+Sans+Condensed:300,600|Open+Sans:400,300,600,700|Maven+Pro:400,700);*/
 /*@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");*/
 html {
-    background:#3695a7;
+    background: #3695a7;
 }
 
 body {
@@ -10,11 +10,13 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
 }
-input, .btn{
+
+input, .btn {
     padding: 3px 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
+
 .page {
     position: absolute;
     width: 80%;
@@ -136,23 +138,26 @@ input, .btn{
     padding-left: 0;
 }
 
-.main .nav .menu ul li a{
+.main .nav .menu ul li a {
     color: #0c7380;
     text-decoration: none;
 }
 
-.main .nav .menu ul li.active a{
+.main .nav .menu ul li.active a {
     color: #79BC46;
 }
+
 a.remove {
     color: red !important;
     float: right;
     font-size: 13px;
 }
-.clickable:hover{
+
+.clickable:hover {
     cursor: pointer;
     opacity: 0.7;
 }
+
 .main .nav .menu ul li {
     cursor: pointer;
     list-style: none;
