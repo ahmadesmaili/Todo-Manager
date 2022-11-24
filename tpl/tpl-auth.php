@@ -1,3 +1,4 @@
+<?php defined('BASE_PATH') OR die("Permision Denied"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +15,7 @@
     Auth Forms Here ..
 </div>
 <!-- partial -->
-<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='<?php echo BASE_URL; ?>assets/js/jquery-3.6.1.min.js'></script>
 <script src="<?php echo BASE_URL; ?>assets/js/script.js"></script>
 
 </body>
