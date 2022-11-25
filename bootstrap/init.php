@@ -14,4 +14,3 @@ try {
 
 include BASE_PATH . "libs/lib-auth.php";
 include BASE_PATH . "libs/lib-tasks.php";
-//var_dump($_SERVER['CONTEXT_DOCUMENT_ROOT']);
